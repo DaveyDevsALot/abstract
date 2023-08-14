@@ -1,0 +1,15 @@
+.footer {
+  @apply fixed left-0 bottom-0 w-full bg-red-500 bg-opacity-0 h-48
+}
+
+.partialBorderDiv {
+  @apply relative m-auto w-1/2  h-full border-t-4
+}
+
+.textContainer {
+  @apply fixed bottom-0 text-white text-center w-full mb-28
+}
+
+.sloganOne {
+  @apply text-white
+}
