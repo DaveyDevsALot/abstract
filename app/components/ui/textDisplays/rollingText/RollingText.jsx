@@ -1,10 +1,9 @@
+'use client'
 import React, { useLayoutEffect, useRef } from 'react'
-import PropTypes from 'prop-types'
 import { gsap } from 'gsap'
 import SplitType from 'split-type'
 import classes from './RollingText.module.css'
-
-export const RollingText = ({ displayText, fontSize }) => {
+export const RollingText = ({ displayText, fontSize, minFontSize = '0.5rem' }) => {
   const ref = useRef()
   useLayoutEffect(() => {
     const repeatCount = 12;
@@ -30,15 +29,8 @@ export const RollingText = ({ displayText, fontSize }) => {
   }, []);
 
   return (
-    <div className={classes.stage} ref={ref} style={{fontSize: `clamp(1rem, -0.875rem + 5vw, ${fontSize})`}}>
+    <div className={classes.stage} ref={ref} style={{fontSize: `clamp(${minFontSize}, -0.875rem + 5vw, ${fontSize})`}}>
       <h1 className={classes.cloneText}>{displayText}</h1>
     </div>
   );
 }
-
-RollingText.propTypes = {
-  displayText: PropTypes.string.isRequired,
-};
-
-RollingText.defaultProps = {
-};
