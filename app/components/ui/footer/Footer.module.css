@@ -1,9 +1,9 @@
 .footer {
-  @apply fixed left-0 bottom-0 w-full bg-red-500 bg-opacity-0 h-28 sm:h-32 md:h-44 xl:h-52 transition-[height]
+  @apply fixed left-0 bottom-0 w-full bg-red-500 bg-opacity-0 h-28 sm:h-32 md:h-48 xl:h-52 transition-[height]
 }
 
 .partialBorderDiv {
-  @apply relative m-auto w-1/2  h-full border-t-4
+  @apply relative m-auto w-1/2 max-w-[700px] h-full border-t-4
 }
 
 .textContainer {
@@ -11,5 +11,5 @@
 }
 
 .topLine {
-  @apply mb-4
+  @apply mb-4 md:mb-6
 }

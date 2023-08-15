@@ -5,10 +5,11 @@ import SplitType from 'split-type'
 import classes from './RollingText.module.css'
 export const RollingText = ({ displayText, fontSize, minFontSize = '0.5rem' }) => {
   const ref = useRef()
+
   useLayoutEffect(() => {
-    const repeatCount = 12;
-    const tl = gsap.timeline({ paused: true });
+    const repeatCount = 20;
     const split = new SplitType("h1", { type: "chars" });
+    const tl = gsap.timeline({ paused: true });
 
     split.chars.forEach((obj, i) => {
       let txt = obj.innerText;
@@ -24,7 +25,7 @@ export const RollingText = ({ displayText, fontSize, minFontSize = '0.5rem' }) =
       });
       tl.add(tween, 0);
     });
-    gsap.to(tl, { progress: 1, duration: 5, ease: "power4.inOut" });
+    gsap.to(tl, { progress: 1, duration: 8, ease: "power4.inOut" });
 
   }, []);
 
