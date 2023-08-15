@@ -1,0 +1,20 @@
+
+
+.header {
+  @apply fixed top-0 bottom-0 w-full h-20
+}
+.menuItem {
+  @apply h-20 w-1/5 flex justify-center content-center;
+}
+
+.menuItems {
+  @apply flex content-center justify-evenly;
+}
+
+.itemText {
+  @apply w-fit h-fit self-end text-white;
+}
+
+.partialBorderDiv {
+
+}
