@@ -5,12 +5,14 @@
   color: white;
   overflow: hidden;
   margin: auto;
+  letter-spacing: 0.15em;
 }
 
 .cloneText {
   position: relative;
   width: fit-content;
   overflow: hidden;
+  letter-spacing: 0.15em;
 }
 
 
