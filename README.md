@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, run the development server (see below for containerized local hosting solution):
 
 ```bash
 npm run dev
@@ -18,6 +18,23 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Host Locally:
+
+First, run the command to build the image locally:
+NOTE: You will need docker installed in you local environment. This can be found here: [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/)
+
+```bash
+COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build
+```
+Once this process completes successfully, you can then run:
+
+```bash
+docker-compose up
+```
+
+You will then see a message that a server has started on localhost:3000. At this point you can open [http://localhost:3000](http://localhost:3000) 
+with your browser to see the result.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -27,8 +44,6 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deployed on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Also included with the application was a seamless deployment to Vercel. I understand that this was not a requirement but it was an easy item to add along with the infrastructure.

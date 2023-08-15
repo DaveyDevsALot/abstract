@@ -7,20 +7,11 @@
   margin: auto;
 }
 
-h1 {
-  overflow: hidden;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-}
-
-h1 > div {
-  overflow: hidden;
-}
-
 .cloneText {
   position: relative;
   width: fit-content;
+  overflow: hidden;
+  letter-spacing: 0.03em;
 }
 
 
