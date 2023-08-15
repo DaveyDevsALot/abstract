@@ -1,10 +1,10 @@
 
 
 .header {
-  @apply fixed top-0 bottom-0 w-full h-20
+  @apply fixed top-0 bottom-0 w-full transition-[height]
 }
 .menuItem {
-  @apply h-20 w-1/5 flex justify-center content-center;
+  @apply h-10 md:h-20 w-1/5 flex justify-center content-center;
 }
 
 .menuItems {
