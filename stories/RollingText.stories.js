@@ -8,6 +8,28 @@ export default {
 };
 export const Basic = {
   args: {
-    displayText: 'TEST'
+    displayText: 'TEST',
+    fontSize: `1rem`
+  },
+};
+
+export const Medium = {
+  args: {
+    displayText: 'TEST',
+    fontSize: `2rem`
+  },
+};
+
+export const Large = {
+  args: {
+    displayText: 'TEST',
+    fontSize: `3rem`
+  },
+};
+
+export const XL = {
+  args: {
+    displayText: 'TEST',
+    fontSize: `4rem`
   },
 };
