@@ -7,7 +7,7 @@
 }
 
 .textContainer {
-  @apply fixed bottom-0 text-white text-center w-full mb-28
+  @apply fixed bottom-0 text-white text-center w-full mb-24
 }
 
 .sloganOne {

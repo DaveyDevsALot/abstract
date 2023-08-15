@@ -1,0 +1,26 @@
+
+.stage {
+  height: fit-content;
+  color: white;
+  font-size: clamp(2rem, 9vw + 1rem, 4rem);
+  overflow: hidden;
+
+}
+
+h1 {
+  overflow: hidden;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+}
+
+h1 > div {
+  overflow: hidden;
+}
+
+.cloneText {
+  position: absolute;
+  top: 0;
+}
+
+
