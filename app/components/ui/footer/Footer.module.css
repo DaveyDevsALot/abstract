@@ -1,5 +1,5 @@
 .footer {
-  @apply fixed left-0 bottom-0 w-full bg-red-500 bg-opacity-0 h-48
+  @apply fixed left-0 bottom-0 w-full bg-red-500 bg-opacity-0 h-28 sm:h-32 md:h-44 xl:h-52 transition-[height]
 }
 
 .partialBorderDiv {
@@ -7,9 +7,9 @@
 }
 
 .textContainer {
-  @apply fixed bottom-0 text-white text-center w-full mb-28
+  @apply fixed bottom-0 text-white w-full mb-10 md:mb-16
 }
 
-.sloganOne {
-  @apply text-white
+.topLine {
+  @apply mb-4
 }
