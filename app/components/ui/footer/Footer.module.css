@@ -17,5 +17,5 @@
 }
 
 .partialBorderDiv {
-  @apply m-auto w-1/2 max-w-[700px] h-full border-t-4 pt-5
+  @apply m-auto w-1/2 max-w-[700px] h-full border-t-2 sm:border-t-4 pt-5
 }
