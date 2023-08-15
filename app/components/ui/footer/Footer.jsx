@@ -10,9 +10,9 @@ export const Footer = () => (
       <div className={classes.partialBorderDiv} />
         <div className={classes.textContainer}>
           <div className={classes.topLine}>
-            <RollingText displayText={'SOFTWARE MAKES EVERYTHING BETTER'} fontSize={'2.75rem'} minFontSize={'1.1rem'}></RollingText>
+            <RollingText displayText={'SOFTWARE MAKES EVERYTHING BETTER'} fontSize={'2.75rem'} minFontSize={'1rem'}></RollingText>
           </div>
-            <RollingText displayText={'SO DOES SMILING'} fontSize={'2rem'} minFontSize={'0.75rem'}></RollingText>
+            <RollingText displayText={'SO DOES SMILING'} fontSize={'2rem'} minFontSize={'0.5rem'}></RollingText>
         </div>
     </div>
   </footer>
