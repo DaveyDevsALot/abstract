@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link'
 import classes from './Header.module.css';
-import { RollingText } from '@/app/components/ui/textDisplays/rollingText/RollingText'
+import { RollingText } from '../textDisplays/rollingText/RollingText'
 
 export const Header = () => (
   <nav>
