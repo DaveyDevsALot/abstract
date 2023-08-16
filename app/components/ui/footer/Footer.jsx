@@ -1,16 +1,7 @@
 'use client'
-import React, { useEffect, useState } from 'react'
-import dynamic from 'next/dynamic'
 import classes from './Footer.module.css'
 import { RollingText } from '../../ui/textDisplays/rollingText/RollingText'
 import Link from 'next/link'
-import { GET } from '../../../api/route'
-import { HealthCheck } from '../healthCheck/HealthCheck'
-
-// No SSR and dynamic import for Next Server matching errors due to clock.
-const ClockWithNoSSR = dynamic(() => import('../dateTime/DateTime'), {
-  ssr: false,
-})
 export const Footer = () => {
   return (
     <footer>
@@ -40,8 +31,6 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <ClockWithNoSSR />
-        <HealthCheck />
       </div>
     </footer>
   )

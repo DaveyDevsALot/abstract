@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import Image from 'next/image'
-
+'use client'
+import { useState } from 'react'
 import { GET } from '../../../api/route'
 import classes from '../healthCheck/HealthCheck.module.css'
 import { useInterval } from '../../../hooks/useInterval'
@@ -14,6 +13,7 @@ const determineHealthStatusColor = (data, isLoading) => {
 export const HealthCheck = () => {
   const [data, setData] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
+
   useInterval(async () => {
     setIsLoading(true)
     const result = await GET()
@@ -21,6 +21,7 @@ export const HealthCheck = () => {
     setIsLoading(false)
     setData(result)
   }, 5000)
+
   return (
     <div className={classes.healthCheckMain}>
       <HeartSvg
