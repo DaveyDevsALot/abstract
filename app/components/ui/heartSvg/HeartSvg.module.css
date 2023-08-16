@@ -1,0 +1,3 @@
+.heartSvg {
+  @apply hover:text-[1.5rem];
+}

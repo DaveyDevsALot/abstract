@@ -1,10 +1,10 @@
-const currentGitBranchName = require("current-git-branch");
-
+const currentGitBranchName = require('current-git-branch')
+const currentBranchName = currentGitBranchName()
 // next.config.js
 module.exports = {
   // ... rest of the configuration.
-  output: 'standalone',
   env: {
-    GIT_BRANCH: currentGitBranchName()
-  }
+    GIT_BRANCH: process.env.GIT_BRANCH || currentBranchName,
+  },
+  output: 'standalone',
 }

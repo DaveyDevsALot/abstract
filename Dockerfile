@@ -9,7 +9,8 @@ FROM node:18-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-
+ARG CURRENT_BRANCH
+ENV GIT_BRANCH $CURRENT_BRANCH
 ENV NEXT_TELEMETRY_DISABLED 1
 
 RUN npm run build
@@ -18,6 +19,8 @@ FROM node:18-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV production
+ARG CURRENT_BRANCH
+ENV GIT_BRANCH $CURRENT_BRANCH
 ENV NEXT_TELEMETRY_DISABLED 1
 
 RUN addgroup --system --gid 1001 nodejs
