@@ -1,29 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import { GET } from '../../../api/route'
 import classes from '../healthCheck/HealthCheck.module.css'
+import { useInterval } from '../../../hooks/useInterval'
 
 export const HealthCheck = () => {
-  const [data, setData] = useState(null)
-  const [isLoading, setIsLoading] = useState(true)
+  const [data, setData] = useState({})
 
-  useEffect(() => {
-    async function checkHealth() {
-      setData(null)
-      const result = await GET()
-      if (isLoading) {
-        setData(result)
-      }
-    }
-    checkHealth()
-    return () => {
-      setIsLoading(false)
-    }
-  }, [])
-
+  useInterval(async () => {
+    const result = await GET()
+    setData(result)
+  }, 5000)
+  console.log(data)
   return (
     <div>
-      {(data || isLoading) && <p className={classes.healthCheck}>OK</p>}
-      {!data && !isLoading && <p className={classes.healthCheck}>BAD</p>}
+      {data && <p className={classes.healthCheck}>{data.status}</p>}
+      {!data && <p className={classes.healthCheck}>BAD</p>}
     </div>
   )
 }
