@@ -9,7 +9,7 @@ export const Header = () => (
       <div className={classes.partialBorderDiv} />
       <div className={classes.menuItem}>
         <div className={classes.itemText}>
-          <Link href={'/'}>
+          <Link href={'/about'}>
             <RollingText
               displayText={'ABOUT'}
               fontSize={'0.9rem'}
