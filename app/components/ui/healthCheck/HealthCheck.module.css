@@ -1,0 +1,3 @@
+.healthCheck {
+  @apply text-gray-500 hover:text-gray-50 fixed top-0 text-[0.75rem];
+}
