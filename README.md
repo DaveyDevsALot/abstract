@@ -19,21 +19,21 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Host Locally:
-
-First, run the command to build the image locally:
-NOTE: You will need docker installed in you local environment. This can be found here: [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/)
+Navigate to the root directory of the project.
+Then, run the command to make shell script executable:
+** NOTE: You will need docker installed in you local environment. This can be found here: [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/)
 
 ```bash
-COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build
+chmod +x start_services.sh
 ```
-Once this process completes successfully, you can then run:
+Then, run the command to build and start the service locally:
 
 ```bash
-docker-compose up
+./start_services.sh
 ```
 
 You will then see a message that a server has started on localhost:3000. At this point you can open [http://localhost:3000](http://localhost:3000) 
-with your browser to see the result.
+with your browser to view the application.
 
 ## Learn More
 
