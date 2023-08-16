@@ -1,20 +1,35 @@
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
+
 import { GET } from '../../../api/route'
 import classes from '../healthCheck/HealthCheck.module.css'
 import { useInterval } from '../../../hooks/useInterval'
+import HeartSvg from '../heartSvg/HeartSvg'
 
+const determineHealthStatusColor = (data, isLoading) => {
+  if (data && !isLoading) return 'limegreen'
+  else if (!data && !isLoading) return 'red'
+  else return 'white'
+}
 export const HealthCheck = () => {
-  const [data, setData] = useState({})
-
+  const [data, setData] = useState(null)
+  const [isLoading, setIsLoading] = useState(true)
   useInterval(async () => {
+    setIsLoading(true)
     const result = await GET()
+    console.log('HEALTH CHECK: ', result)
+    setIsLoading(false)
     setData(result)
   }, 5000)
-  console.log(data)
   return (
-    <div>
-      {data && <p className={classes.healthCheck}>{data.status}</p>}
-      {!data && <p className={classes.healthCheck}>BAD</p>}
+    <div className={classes.healthCheckMain}>
+      <HeartSvg
+        style={{
+          position: 'absolute',
+          top: 0,
+          fill: determineHealthStatusColor(data, isLoading),
+        }}
+      />
     </div>
   )
 }

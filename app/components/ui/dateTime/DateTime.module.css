@@ -1,4 +1,4 @@
 .dateTimeMain {
-  @apply text-gray-500 hover:text-gray-50 tracking-wider flex justify-between text-[0.5rem] uppercase fixed bottom-1 left-0 right-0;
+  @apply text-gray-500 hover:text-gray-50 tracking-wider flex justify-between text-[0.5rem] hover:text-[1.5rem] uppercase fixed bottom-1 left-0 right-0 transition-all;
 }
 
