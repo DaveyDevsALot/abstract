@@ -1,0 +1,32 @@
+.homeMain {
+  @apply h-full w-full flex flex-col content-center justify-center;
+}
+
+.homeItem {
+  @apply w-fit relative m-auto
+}
+
+.itemText {
+  @apply w-full h-full text-white mb-4;
+}
+
+.mainImage {
+  @apply relative md:pt-40;
+}
+
+.mainImage2 {
+  @apply absolute bottom-0 opacity-20;
+}
+
+.mainText {
+@apply flex flex-col content-center;
+}
+
+.menuItems {
+  @apply flex flex-col content-center;
+}
+
+.menuItem {
+  @apply w-full;
+}
+

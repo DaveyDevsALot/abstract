@@ -1,5 +1,10 @@
-import { MainWrapper } from '../app/components/ui/mainWrapper/MainWrapper'
+import { MainWrapper } from './components/ui/mainWrapper/MainWrapper'
+import { Main } from './views/main/Main'
 
 export default function Home() {
-  return <MainWrapper>HOME</MainWrapper>
+  return (
+    <MainWrapper>
+      <Main />
+    </MainWrapper>
+  )
 }

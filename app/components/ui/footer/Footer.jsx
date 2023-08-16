@@ -14,7 +14,7 @@ export const Footer = () => {
                 <RollingText
                   displayText={'SOFTWARE MAKES EVERYTHING BETTER'}
                   fontSize={'2.5rem'}
-                  minFontSize={'1rem'}
+                  minFontSize={'0.8rem'}
                 ></RollingText>
               </Link>
             </div>
