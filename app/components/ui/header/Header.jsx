@@ -11,21 +11,21 @@ export const Header = () => (
           <div className={classes.menuItem}>
             <div className={classes.itemText}>
               <Link href={'/'}>
-                  <RollingText displayText={'ABOUT'} fontSize={'1rem'} minFontSize={'0.5rem'}></RollingText>
+                  <RollingText displayText={'ABOUT'} fontSize={'0.9rem'} minFontSize={'0.5rem'}></RollingText>
               </Link>
             </div>
           </div>
           <div className={classes.menuItem}>
             <div className={classes.itemText}>
               <Link href={'/'}>
-                <RollingText displayText={'HOME'} fontSize={'1rem'} minFontSize={'0.5rem'}></RollingText>
+                <RollingText displayText={'HOME'} fontSize={'0.9rem'} minFontSize={'0.5rem'}></RollingText>
               </Link>
             </div>
           </div>
           <div className={classes.menuItem}>
             <div className={classes.itemText}>
               <Link href={'/'}>
-                <RollingText displayText={'EXPERIENCE'} fontSize={'1rem'} minFontSize={'0.5rem'}></RollingText>
+                <RollingText displayText={'EXPERIENCE'} fontSize={'0.9rem'} minFontSize={'0.5rem'}></RollingText>
               </Link>
             </div>
           </div>
