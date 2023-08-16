@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 
 // creating the custom useInterval hook
 export function useInterval(callback, delay) {
@@ -11,7 +11,7 @@ export function useInterval(callback, delay) {
   }, [callback])
 
   // combining the setInterval and
-  //clearInterval methods based on delay.
+  // clearInterval methods based on delay.
   useEffect(() => {
     function func() {
       savedCallback.current()
