@@ -1,0 +1,3 @@
+.dateTimeMain {
+  @apply text-gray-500 tracking-wider flex justify-between text-[0.5rem] uppercase fixed bottom-1 left-0 right-0;
+}
