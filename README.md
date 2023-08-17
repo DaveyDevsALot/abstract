@@ -48,6 +48,8 @@ To start, I believe that every item on the assessment was met. The application c
 As for a comparison to competitor sites of this kind (developer bio apps) I believe this does stand out in a good way but it must be noted that there is a clear lack of accessibilty and also a possible dangerous sensory experience for a sensitive user. This is not something I would ever consider for an enterprise production application but given the freedom to be creative and have fun I went for it!
 As for usability, I think there are some great parts of the application. The layout appears stable on all platforms creating an enjoyable user experience. The interactivity and animation is quite shocking but I believe given the objective it _may_ wow in the right places. 
 
+Some more things to note for future enhancements. It was a 'nice to have' that I would have liked to include that would leverage local storage to allow a user to toggle the scrolling text on/off. Perhaps it should also not occur every time the user navigates to home. I would also prefer to have launced the links to other projects in a new blank target. Also, I think it may have followed standard designs more to have the home as the '1st' selection. So, possibly putting it on the left of the menu. Just some observations as I sit back and go through it.
+
 Overall, due to the lack of accessibility, and some sensory shocks, I would not be able to grade an A. I would be satisfied in the time given to give an honest assesment of a B / B+.
 I hope you enjoyed the repository as much as I have! And, remember, keep on smiling!!
 
