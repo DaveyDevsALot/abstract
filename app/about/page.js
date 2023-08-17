@@ -2,42 +2,39 @@
 import { MainWrapper } from '../components/ui/mainWrapper/MainWrapper'
 import classes from './About.module.css'
 import Image from 'next/image'
-import Link from 'next/link'
-import { RollingText } from '../components/ui/textDisplays/rollingText/RollingText'
-import { useLayoutEffect, useState } from 'react'
+import { useLayoutEffect } from 'react'
 import { gsap } from 'gsap'
 
 export default function About() {
-  // useLayoutEffect(() => {
-  //   const tl = gsap.timeline({ paused: true })
-  //   if (!el || !el2) return
-  //   tl.from('#fadeOut1', {
-  //     opacity: 0,
-  //     duration: 2.5,
-  //     ease: 'easeInOut',
-  //   })
-  //   tl.to('#fadeOut1', {
-  //     opacity: 0,
-  //     duration: 2.5,
-  //     ease: 'easeInOut',
-  //   })
-  //   tl.from('#fadeOut2', {
-  //     opacity: 0,
-  //     duration: 2.5,
-  //     ease: 'easeInOut',
-  //   })
-  //   tl.to('#fadeOut2', {
-  //     opacity: 0,
-  //     duration: 2.5,
-  //     ease: 'easeInOut',
-  //   })
-  //   tl.from('#fadeOut3', {
-  //     opacity: 0,
-  //     duration: 2.5,
-  //     ease: 'easeInOut',
-  //   })
-  //   tl.play()
-  // }, [el, el2])
+  useLayoutEffect(() => {
+    const tl = gsap.timeline({ paused: true })
+    tl.from('#fadeOut1', {
+      opacity: 0,
+      duration: 2.5,
+      ease: 'easeInOut',
+    })
+    tl.to('#fadeOut1', {
+      opacity: 0,
+      duration: 2.5,
+      ease: 'easeInOut',
+    })
+    tl.from('#fadeOut2', {
+      opacity: 0,
+      duration: 2.5,
+      ease: 'easeInOut',
+    })
+    tl.to('#fadeOut2', {
+      opacity: 0,
+      duration: 2.5,
+      ease: 'easeInOut',
+    })
+    tl.from('#fadeOut3', {
+      opacity: 0,
+      duration: 2.5,
+      ease: 'easeInOut',
+    })
+    tl.play()
+  }, [])
 
   return (
     <MainWrapper>
@@ -80,21 +77,18 @@ export default function About() {
             </div>
             <div className={classes.textDisplayItem}>
               <div className={classes.textLabel}>About Me</div>
-              <div className={classes.centeredText}>
-                <div className={classes.textLine}>
-                  I am David Robert Coulombe. I am passionate about so many
-                  things in life. Friends, family, music, travel, food, golf,
-                  and fishing just to name a few.
-                </div>
-                <div className={classes.textLine}>
-                  But all of my friends would tell you that I love
-                </div>
-                <div
-                  className={classes.textLine}
-                  style={{ textAlign: 'center' }}
-                >
-                  SMILING AND LAUGHTER MOST{' '}
-                </div>
+            </div>
+            <div className={classes.centeredText}>
+              <div className={classes.textLine}>
+                I am David Robert Coulombe. I am passionate about so many things
+                in life. Friends, family, music, travel, food, golf, and fishing
+                just to name a few.
+              </div>
+              <div className={classes.textLine}>
+                But all of my friends would tell you that I love
+              </div>
+              <div className={classes.textLine} style={{ textAlign: 'center' }}>
+                SMILING AND LAUGHTER MOST{' '}
               </div>
             </div>
           </div>
