@@ -1,4 +1,4 @@
 .main {
-  @apply min-h-screen overflow-hidden;
+  @apply flex justify-center flex-grow overflow-hidden;
 
 }
