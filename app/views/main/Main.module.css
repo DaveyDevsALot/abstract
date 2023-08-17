@@ -1,19 +1,19 @@
 .homeMain {
-  @apply flex flex-col justify-center;
+  @apply flex flex-col justify-center h-[90vh] md:h-[85vh];
 }
 
 .homeItem {
-  @apply w-fit relative m-auto
+  @apply w-fit relative m-auto mb-0;
 }
 
 .itemText {
   @apply w-full h-full text-white;
 }
 .images {
-  @apply  relative h-[65vh] sm:h-[65vh] md:h-[60vh];
+  @apply  relative;
 }
 .mainImage {
-  @apply h-[65vh] sm:h-[65vh] md:h-[60vh] opacity-0;
+  @apply opacity-0;
 }
 
 .mainImage2 {

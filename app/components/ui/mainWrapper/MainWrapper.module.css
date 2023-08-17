@@ -1,3 +1,4 @@
 .main {
-  @apply flex min-h-screen flex-col items-center justify-end pb-24 md:pb-36 overflow-hidden;
+  @apply min-h-screen overflow-hidden;
+
 }

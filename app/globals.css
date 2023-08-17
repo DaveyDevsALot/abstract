@@ -27,12 +27,10 @@ body {
 
 body {
   min-height: 100vh;
-  overflow: hidden;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
 }
 
 html {
-  overflow: hidden;
   height: -webkit-fill-available;
 }
