@@ -39,6 +39,19 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+## Development Notes
+You can find the figma moc ups in the docs folder as well as a screenshot of a KanBan board I used initially but had to sacrifice it for time contraints.
+
+## UI/UX Scoring
+
+To start, I believe that every item on the assessment was met. The application can be viewed once served locally. Included in every view of the application are a health check indicator which is denoted by a heart icon that starts as white and will turn the stroke/outline to green/red depending on the health of the service. This is polled every 60 seconds and can be seen in the developers tools in the console. There is also a date, time, and current branch name that the build was created from and it can all be found at the very bottom of the footer. I ultimately made the choice to not 'crowd' the UI by making these items large so the font color and size was selected to be mostly hidden. Worry not! Give it a hover on a device that is hoverable (or click on a phone) and it will be much more easily viewed. That being said I think the task success, time on task, and usability/enjoyment of the user would be an overall win.
+As for a comparison to competitor sites of this kind (developer bio apps) I believe this does stand out in a good way but it must be noted that there is a clear lack of accessibilty and also a possible dangerous sensory experience for a sensitive user. This is not something I would ever consider for an enterprise production application but given the freedom to be creative and have fun I went for it!
+As for usability, I think there are some great parts of the application. The layout appears stable on all platforms creating an enjoyable user experience. The interactivity and animation is quite shocking but I believe given the objective it _may_ wow in the right places. 
+
+Overall, due to the lack of accessibility, and some sensory shocks, I would not be able to grade an A. I would be satisfied in the time given to give an honest assesment of a B / B+.
+I hope you enjoyed the repository as much as I have! And, remember, keep on smiling!!
+
 ## Deployed on Vercel
 
 Also included with the application was a seamless deployment to Vercel. I understand that this was not a requirement but it was an easy item to add along with the infrastructure.
+You can see it at [David R Coulombe](abstract-gilt.vercel.app)
