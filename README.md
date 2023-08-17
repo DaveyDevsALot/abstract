@@ -41,6 +41,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Development Notes
 You can find the figma moc ups in the docs folder as well as a screenshot of a KanBan board I used initially but had to sacrifice it for time contraints.
+Note: the anchor links to the development projects in my experience section seem to be broken on the host site. I have filed an issue but please use the top bar navigation on Anewgo.com
+to reference these interactive UI components that I have built at my time at Anewgo.
 
 ## UI/UX Scoring
 
