@@ -12,7 +12,7 @@ const ClockWithNoSSR = dynamic(
     ssr: false,
   }
 )
-const inter = Inter({ subsets: ['latin'] })
+
 const FrankFont = localFont({
   src: '../public/duecredit2-regular-webfont.woff2',
   variable: '--font-frank',
