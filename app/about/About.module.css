@@ -3,7 +3,7 @@
 }
 
 .item {
-  @apply absolute top-0 bottom-0;
+  @apply absolute;
   position: fixed;
   top: 50%;
   left: 50%;
