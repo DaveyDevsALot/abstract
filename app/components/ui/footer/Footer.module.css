@@ -1,7 +1,7 @@
 
 
 .footer {
-  @apply fixed bottom-0 w-full transition-[height]
+  @apply fixed bottom-0 w-full transition-[height] flex flex-col bottom-4;
 }
 
 .menuItem {
@@ -9,14 +9,14 @@
 }
 
 .menuItems {
-  @apply flex flex-col content-center mb-4;
+  @apply relative flex flex-col content-center mb-6;
 }
 
 .itemText {
-  @apply w-full h-full text-white mb-4;
+  @apply w-full h-full text-white;
 }
 
 .partialBorderDiv {
-  @apply m-auto max-w-[50px] md:max-w-xs h-full border-t-2 sm:border-t-4 pt-6
+  @apply absolute m-auto bottom-4 left-0 right-0 max-w-[50px] md:max-w-xs w-1/5 h-full border-t-2 sm:border-t-4
 }
 
