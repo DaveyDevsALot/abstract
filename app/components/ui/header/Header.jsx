@@ -11,8 +11,8 @@ export const Header = () => (
         <Link href={'/about'}>
           <RollingText
             displayText={'ABOUT'}
-            fontSize={'0.9rem'}
-            minFontSize={'0.5rem'}
+            fontSize={'3rem'}
+            minFontSize={'1.5rem'}
           ></RollingText>
         </Link>
       </div>
@@ -22,8 +22,8 @@ export const Header = () => (
         <Link href={'/'}>
           <RollingText
             displayText={'HOME'}
-            fontSize={'0.9rem'}
-            minFontSize={'0.5rem'}
+            fontSize={'3rem'}
+            minFontSize={'1.5rem'}
           ></RollingText>
         </Link>
       </div>
@@ -33,8 +33,8 @@ export const Header = () => (
         <Link href={'/experience'}>
           <RollingText
             displayText={'EXPERIENCE'}
-            fontSize={'0.9rem'}
-            minFontSize={'0.5rem'}
+            fontSize={'3rem'}
+            minFontSize={'1.5rem'}
           ></RollingText>
         </Link>
       </div>

@@ -59,8 +59,8 @@ export const Main = () => {
             <Link href={'/'}>
               <RollingText
                 displayText={'DAVID COULOMBE'}
-                fontSize={'3.5rem'}
-                minFontSize={'2rem'}
+                fontSize={'5rem'}
+                minFontSize={'3rem'}
               ></RollingText>
             </Link>
           </div>
@@ -71,7 +71,7 @@ export const Main = () => {
               <RollingText
                 displayText={'SENIOR REACT ENGINEER'}
                 fontSize={'2rem'}
-                minFontSize={'1rem'}
+                minFontSize={'1.5rem'}
               ></RollingText>
             </Link>
           </div>

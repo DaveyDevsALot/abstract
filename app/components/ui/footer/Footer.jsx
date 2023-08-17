@@ -13,8 +13,8 @@ export const Footer = () => {
               <Link href={'/'}>
                 <RollingText
                   displayText={'SOFTWARE MAKES EVERYTHING BETTER'}
-                  fontSize={'2.5rem'}
-                  minFontSize={'0.8rem'}
+                  fontSize={'4rem'}
+                  minFontSize={'2rem'}
                 ></RollingText>
               </Link>
             </div>
@@ -24,8 +24,8 @@ export const Footer = () => {
               <Link href={'/'}>
                 <RollingText
                   displayText={'SO DOES SMILING'}
-                  fontSize={'2rem'}
-                  minFontSize={'0.5rem'}
+                  fontSize={'2.5rem'}
+                  minFontSize={'2rem'}
                 ></RollingText>
               </Link>
             </div>
