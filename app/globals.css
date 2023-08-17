@@ -24,3 +24,13 @@ body {
   background: #262626;
   line-height: 1;
 }
+
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
