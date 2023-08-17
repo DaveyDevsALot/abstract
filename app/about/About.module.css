@@ -1,0 +1,15 @@
+.aboutMain {
+  @apply flex justify-center content-center flex-wrap;
+}
+
+.item {
+  @apply absolute top-0 bottom-0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+
+
