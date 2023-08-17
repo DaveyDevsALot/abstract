@@ -1,7 +1,7 @@
 
 
 .footer {
-  @apply fixed bottom-0 w-full transition-[height] flex flex-col bottom-4;
+  @apply fixed bottom-0 w-full transition-[height] flex flex-col;
 }
 
 .menuItem {
@@ -17,6 +17,6 @@
 }
 
 .partialBorderDiv {
-  @apply absolute m-auto bottom-4 left-0 right-0 max-w-[50px] md:max-w-xs w-1/5 h-full border-t-2 sm:border-t-4
+  @apply absolute m-auto bottom-2 md:bottom-6 left-0 right-0 max-w-[50px] md:max-w-xs w-1/5 h-full border-t-2 sm:border-t-4
 }
 
