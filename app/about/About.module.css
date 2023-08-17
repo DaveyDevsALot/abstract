@@ -1,13 +1,32 @@
 .aboutMain {
   @apply flex justify-center content-center flex-wrap;
 }
+.centeredText {
+  @apply text-center
+}
 
-.item1, .item2 {
+.item1, .item2,.textDisplayMain {
   @apply w-auto m-auto top-0;
 }
 
 .item2 {
   @apply absolute;
+}
+
+.textDisplayItem {
+  @apply flex flex-col p-2
+}
+
+.textDisplayMain {
+  @apply absolute top-[-10rem] md:top-[-4rem] text-gray-50;
+}
+
+.textLabel {
+  @apply text-3xl md:text-6xl tracking-[0.4rem] font-thin
+}
+
+.textLine {
+  @apply text-3xl md:text-5xl pl-8 tracking-[0.4rem] font-thin
 }
 
 .items {
