@@ -58,24 +58,20 @@ export const Main = () => {
       <div className={classes.mainText}>
         <div className={classes.menuItem}>
           <div className={classes.itemText}>
-            <Link href={'/'}>
-              <RollingText
-                displayText={'DAVID COULOMBE'}
-                fontSize={'5rem'}
-                minFontSize={'3rem'}
-              ></RollingText>
-            </Link>
+            <RollingText
+              displayText={'DAVID COULOMBE'}
+              fontSize={'5rem'}
+              minFontSize={'3rem'}
+            />
           </div>
         </div>
         <div className={classes.menuItem}>
           <div className={classes.itemText}>
-            <Link href={'/'}>
-              <RollingText
-                displayText={'SENIOR REACT ENGINEER'}
-                fontSize={'2rem'}
-                minFontSize={'1.5rem'}
-              ></RollingText>
-            </Link>
+            <RollingText
+              displayText={'SENIOR REACT ENGINEER'}
+              fontSize={'2rem'}
+              minFontSize={'1.5rem'}
+            />
           </div>
         </div>
       </div>

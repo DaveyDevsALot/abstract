@@ -10,48 +10,47 @@ import { gsap } from 'gsap'
 export default function About() {
   const [el, setEl] = useState(null)
   const [el2, setEl2] = useState(null)
-  const tl = gsap.timeline({ paused: true })
 
   useLayoutEffect(() => {
+    const tl = gsap.timeline({ paused: true })
     if (!el || !el2) return
-    const tween = gsap.from(el, {
+    tl.from(el, {
       opacity: 0,
-      duration: 5,
+      duration: 2.5,
+      ease: 'easeInOut',
     })
-    tl.add(tween, 0)
-    const tween2 = gsap.to(el, {
+    tl.to(el, {
       opacity: 0,
-      duration: 5,
+      duration: 2.5,
+      ease: 'easeInOut',
     })
-    tl.add(tween2, 1)
-    const tween3 = gsap.from(el2, {
+    tl.from(el2, {
       opacity: 0,
-      duration: 5,
+      duration: 2.5,
+      ease: 'easeInOut',
     })
-    tl.add(tween3, 2)
-    const tween4 = gsap.to(el2, {
+    tl.to(el2, {
       opacity: 0,
-      duration: 5,
+      duration: 2.5,
+      ease: 'easeInOut',
     })
-    tl.add(tween4, 3)
+    tl.play()
   }, [el, el2])
-  gsap.to(tl, { progress: 1, duration: 20, ease: 'power2.inOut' })
-
   return (
     <MainWrapper>
       <div className={classes.aboutMain}>
         <div className={classes.item} id="fadeOut1" ref={setEl}>
           <Image
-            width={600}
-            height={600}
+            width={800}
+            height={800}
             src="/uconn_cropped.png"
             alt="University Of Connecticut Logo"
           />
         </div>
         <div className={classes.item} id="fadeOut1" ref={setEl2}>
           <Image
-            width={600}
-            height={600}
+            width={800}
+            height={800}
             src="/ed_x_new.png"
             alt="EdX/Trilogy Ed Logo"
           />
