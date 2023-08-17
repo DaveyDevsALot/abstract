@@ -1,7 +1,7 @@
 
 
 .footer {
-  @apply fixed bottom-0 w-full transition-[height] flex flex-col;
+  @apply w-full transition-[height] flex flex-col;
 }
 
 .menuItem {

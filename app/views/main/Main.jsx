@@ -24,61 +24,59 @@ export const Main = () => {
   }, [el, el2])
 
   return (
-    <section>
-      <div className={classes.homeMain}>
-        <div className={classes.homeItem}>
-          <div className={classes.images}>
-            <div className={classes.mainImage}>
-              <Image
-                width={200}
-                height={200}
-                src="/main/darker_b_&_w.png"
-                alt="Black and White Image of David R Coulombe"
-              />
-            </div>
-            <div className={classes.mainImage2} id="fadeIn" ref={setEl}>
-              <Image
-                width={200}
-                height={200}
-                src="/main/David_Site_Impressionist.png"
-                alt="Black and White Image of David R Coulombe"
-              />
-            </div>
-            <div className={classes.mainImage2} id="fadeOut" ref={setEl2}>
-              <Image
-                width={200}
-                height={200}
-                src="/main/darker_b_&_w.png"
-                alt="Black and White Image of David R Coulombe"
-              />
-            </div>
+    <div className={classes.homeMain}>
+      <div className={classes.homeItem}>
+        <div className={classes.images}>
+          <div className={classes.mainImage}>
+            <Image
+              width={200}
+              height={200}
+              src="/main/darker_b_&_w.png"
+              alt="Black and White Image of David R Coulombe"
+            />
           </div>
-        </div>
-        <div className={classes.mainText}>
-          <div className={classes.menuItem}>
-            <div className={classes.itemText}>
-              <Link href={'/'}>
-                <RollingText
-                  displayText={'DAVID COULOMBE'}
-                  fontSize={'3.5rem'}
-                  minFontSize={'2rem'}
-                ></RollingText>
-              </Link>
-            </div>
+          <div className={classes.mainImage2} id="fadeIn" ref={setEl}>
+            <Image
+              width={200}
+              height={200}
+              src="/main/David_Site_Impressionist.png"
+              alt="Black and White Image of David R Coulombe"
+            />
           </div>
-          <div className={classes.menuItem}>
-            <div className={classes.itemText}>
-              <Link href={'/'}>
-                <RollingText
-                  displayText={'SENIOR REACT ENGINEER'}
-                  fontSize={'2rem'}
-                  minFontSize={'1rem'}
-                ></RollingText>
-              </Link>
-            </div>
+          <div className={classes.mainImage2} id="fadeOut" ref={setEl2}>
+            <Image
+              width={200}
+              height={200}
+              src="/main/darker_b_&_w.png"
+              alt="Black and White Image of David R Coulombe"
+            />
           </div>
         </div>
       </div>
-    </section>
+      <div className={classes.mainText}>
+        <div className={classes.menuItem}>
+          <div className={classes.itemText}>
+            <Link href={'/'}>
+              <RollingText
+                displayText={'DAVID COULOMBE'}
+                fontSize={'3.5rem'}
+                minFontSize={'2rem'}
+              ></RollingText>
+            </Link>
+          </div>
+        </div>
+        <div className={classes.menuItem}>
+          <div className={classes.itemText}>
+            <Link href={'/'}>
+              <RollingText
+                displayText={'SENIOR REACT ENGINEER'}
+                fontSize={'2rem'}
+                minFontSize={'1rem'}
+              ></RollingText>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
