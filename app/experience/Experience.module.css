@@ -1,0 +1,19 @@
+.expMain {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-2 my-auto h-full ;
+}
+
+.expItem {
+  @apply relative w-72 sm:w-96 xl:w-[36rem] rounded-lg transition-all;
+}
+
+.image {
+  @apply h-full rounded-lg;
+}
+
+.itemText {
+  @apply absolute right-0 bottom-0 bg-gray-100 text-4xl tracking-widest rounded-tl-xl rounded-br-lg pl-3 pr-2;
+}
+
+.itemTextLight {
+  @apply text-gray-50 text-4xl;
+}

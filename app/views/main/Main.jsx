@@ -1,11 +1,11 @@
 'use client'
-import { useLayoutEffect, useRef, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import { gsap } from 'gsap'
 import { RollingText } from '../../components/ui/textDisplays/rollingText/RollingText'
 import classes from './Main.module.css'
-import SplitType from 'split-type'
+import photo1 from '/public/main/darker_b_&_w.png'
+import photo2 from '/public/main/David_Site_Impressionist.png'
 
 export const Main = () => {
   const [el, setEl] = useState(null)
@@ -31,25 +31,22 @@ export const Main = () => {
         <div className={classes.images}>
           <div className={classes.mainImage}>
             <Image
-              width={200}
-              height={200}
-              src="/main/darker_b_&_w.png"
+              height={400}
+              src={photo1}
               alt="Black and White Image of David R Coulombe"
             />
           </div>
           <div className={classes.mainImage2} id="fadeIn" ref={setEl}>
             <Image
-              width={200}
-              height={200}
-              src="/main/David_Site_Impressionist.png"
+              height={400}
+              src={photo2}
               alt="Black and White Image of David R Coulombe"
             />
           </div>
           <div className={classes.mainImage2} id="fadeOut" ref={setEl2}>
             <Image
-              width={200}
-              height={200}
-              src="/main/darker_b_&_w.png"
+              height={400}
+              src={photo1}
               alt="Black and White Image of David R Coulombe"
             />
           </div>

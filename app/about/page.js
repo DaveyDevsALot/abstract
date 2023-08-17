@@ -36,24 +36,27 @@ export default function About() {
     })
     tl.play()
   }, [el, el2])
+
   return (
     <MainWrapper>
       <div className={classes.aboutMain}>
-        <div className={classes.item} id="fadeOut1" ref={setEl}>
-          <Image
-            width={800}
-            height={800}
-            src="/uconn_cropped.png"
-            alt="University Of Connecticut Logo"
-          />
-        </div>
-        <div className={classes.item} id="fadeOut1" ref={setEl2}>
-          <Image
-            width={800}
-            height={800}
-            src="/ed_x_new.png"
-            alt="EdX/Trilogy Ed Logo"
-          />
+        <div className={classes.items}>
+          <div className={classes.item1} id="fadeOut1" ref={setEl}>
+            <Image
+              width={800}
+              height={800}
+              src="/uconn_cropped.png"
+              alt="University Of Connecticut Logo"
+            />
+          </div>
+          <div className={classes.item2} id="fadeOut1" ref={setEl2}>
+            <Image
+              width={800}
+              height={800}
+              src="/ed_x_new.png"
+              alt="EdX/Trilogy Ed Logo"
+            />
+          </div>
         </div>
       </div>
     </MainWrapper>

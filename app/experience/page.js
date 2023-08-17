@@ -1,50 +1,48 @@
-'use client'
-import React, { useRef, useState } from 'react'
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react'
-
-// Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/pagination'
+import Image from 'next/image'
 import { MainWrapper } from '../components/ui/mainWrapper/MainWrapper'
-
-import './styles.css'
-
-// import required modules
-import { Pagination } from 'swiper/modules'
+import classes from './Experience.module.css'
+import interiorDesignPhoto from '../../public/experience/interior_design_ss.png'
+import exteriorDesignPhoto from '../../public/experience/exterior_design_ss.png'
+import floorplanDesignPhoto from '../../public/experience/floorplan_design_ss.png'
+import anewgoHomePagePhoto from '../../public/experience/anewgo_ss.png'
 
 export default function Experience() {
   return (
     <MainWrapper>
-      <Swiper
-        className="mySwiper swiper-h"
-        spaceBetween={50}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-      >
-        <SwiperSlide>Horizontal Slide 1</SwiperSlide>
-        <SwiperSlide>
-          <Swiper
-            className="mySwiper2 swiper-v"
-            direction={'vertical'}
-            spaceBetween={50}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-          >
-            <SwiperSlide>Vertical Slide 1</SwiperSlide>
-            <SwiperSlide>Vertical Slide 2</SwiperSlide>
-            <SwiperSlide>Vertical Slide 3</SwiperSlide>
-            <SwiperSlide>Vertical Slide 4</SwiperSlide>
-            <SwiperSlide>Vertical Slide 5</SwiperSlide>
-          </Swiper>
-        </SwiperSlide>
-        <SwiperSlide>Horizontal Slide 3</SwiperSlide>
-        <SwiperSlide>Horizontal Slide 4</SwiperSlide>
-      </Swiper>
+      <div className={classes.expMain}>
+        <div className={classes.expItem}>
+          <Image
+            className={classes.image}
+            src={interiorDesignPhoto}
+            alt="Photo of interactive interior designer."
+          />
+          <div className={classes.itemText}>Interior Designer</div>
+        </div>
+        <div className={classes.expItem}>
+          <Image
+            className={classes.image}
+            src={exteriorDesignPhoto}
+            alt="Photo of interactive exterior designer."
+          />
+          <div className={classes.itemText}>Exterior Designer</div>
+        </div>
+        <div className={classes.expItem}>
+          <Image
+            className={classes.image}
+            src={floorplanDesignPhoto}
+            alt="Photo of interactive floorplan designer."
+          />
+          <div className={classes.itemText}>Floorplan Designer</div>
+        </div>
+        <div className={classes.expItem}>
+          <Image
+            className={classes.image}
+            src={anewgoHomePagePhoto}
+            alt="Photo of Anewgo.com"
+          />
+          <div className={classes.itemText}>Anewgo Marketplace</div>
+        </div>
+      </div>
     </MainWrapper>
   )
 }

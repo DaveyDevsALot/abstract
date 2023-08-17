@@ -9,9 +9,11 @@
 .itemText {
   @apply w-full h-full text-white;
 }
+
 .images {
   @apply  relative;
 }
+
 .mainImage {
   @apply opacity-0;
 }

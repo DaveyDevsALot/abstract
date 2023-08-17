@@ -2,13 +2,16 @@
   @apply flex justify-center content-center flex-wrap;
 }
 
-.item {
+.item1, .item2 {
+  @apply w-auto m-auto top-0;
+}
+
+.item2 {
   @apply absolute;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+}
+
+.items {
+  @apply relative
 }
 
 
