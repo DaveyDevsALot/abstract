@@ -15,11 +15,13 @@ export const Main = () => {
     if (!el || !el2) return
     gsap.from(el, {
       opacity: 0,
-      duration: 8,
+      duration: 12,
+      ease: 'ease-in-out',
     })
     gsap.to(el2, {
       opacity: 0,
-      duration: 8,
+      duration: 12,
+      ease: 'ease-in-out',
     })
   }, [el, el2])
 
