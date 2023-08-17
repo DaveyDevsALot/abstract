@@ -6,35 +6,35 @@ import { useLayoutEffect } from 'react'
 import { gsap } from 'gsap'
 
 export default function About() {
-  useLayoutEffect(() => {
-    const tl = gsap.timeline({ paused: true })
-    tl.from('#fadeOut1', {
-      opacity: 0,
-      duration: 2.5,
-      ease: 'easeInOut',
-    })
-    tl.to('#fadeOut1', {
-      opacity: 0,
-      duration: 2.5,
-      ease: 'easeInOut',
-    })
-    tl.from('#fadeOut2', {
-      opacity: 0,
-      duration: 2.5,
-      ease: 'easeInOut',
-    })
-    tl.to('#fadeOut2', {
-      opacity: 0,
-      duration: 2.5,
-      ease: 'easeInOut',
-    })
-    tl.from('#fadeOut3', {
-      opacity: 0,
-      duration: 2.5,
-      ease: 'easeInOut',
-    })
-    tl.play()
-  }, [])
+  // useLayoutEffect(() => {
+  //   const tl = gsap.timeline({ paused: true })
+  //   tl.from('#fadeOut1', {
+  //     opacity: 0,
+  //     duration: 2.5,
+  //     ease: 'easeInOut',
+  //   })
+  //   tl.to('#fadeOut1', {
+  //     opacity: 0,
+  //     duration: 2.5,
+  //     ease: 'easeInOut',
+  //   })
+  //   tl.from('#fadeOut2', {
+  //     opacity: 0,
+  //     duration: 2.5,
+  //     ease: 'easeInOut',
+  //   })
+  //   tl.to('#fadeOut2', {
+  //     opacity: 0,
+  //     duration: 2.5,
+  //     ease: 'easeInOut',
+  //   })
+  //   tl.from('#fadeOut3', {
+  //     opacity: 0,
+  //     duration: 2.5,
+  //     ease: 'easeInOut',
+  //   })
+  //   tl.play()
+  // }, [])
 
   return (
     <MainWrapper>

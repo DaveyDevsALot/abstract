@@ -1,16 +1,24 @@
 .aboutMain {
-  @apply flex justify-center content-center flex-wrap px-8 uppercase;
+  @apply flex justify-center content-start flex-wrap px-8 uppercase;
 }
 .centeredText {
   @apply text-center
 }
 
 .item1, .item2,.textDisplayMain {
-  @apply w-auto m-auto top-0;
+  @apply w-auto m-auto top-16;
+}
+
+.item1 {
+  @apply pt-32
 }
 
 .item2 {
   @apply absolute;
+}
+
+.item1, .item2 {
+  @apply top-36
 }
 
 .textDisplayItem {
@@ -18,7 +26,7 @@
 }
 
 .textDisplayMain {
-  @apply absolute top-[-1rem] text-gray-50;
+  @apply absolute top-[-1rem] sm:top-16 pt-10 text-gray-50;
 }
 
 .textLabel {
