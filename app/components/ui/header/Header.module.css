@@ -1,7 +1,7 @@
 
 
 .header {
-  @apply h-[40px] top-0 w-full transition-[height] flex content-evenly justify-center
+  @apply h-[40px] w-full transition-[height] flex content-evenly justify-center pt-4
 }
 .menuItem {
   @apply pt-8 w-1/3 sm:w-1/5 sm:pt-10 flex justify-center;

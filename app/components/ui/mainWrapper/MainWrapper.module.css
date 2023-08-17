@@ -1,4 +1,4 @@
 .main {
-  @apply flex justify-center flex-grow overflow-hidden;
+  @apply flex justify-center flex-grow overflow-hidden pb-2;
 
 }
