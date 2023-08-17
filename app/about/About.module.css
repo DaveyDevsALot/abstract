@@ -18,15 +18,15 @@
 }
 
 .textDisplayMain {
-  @apply absolute top-[-4rem] text-gray-50;
+  @apply absolute top-[-1rem] text-gray-50;
 }
 
 .textLabel {
-  @apply text-3xl md:text-6xl tracking-widest
+  @apply text-3xl lg:text-6xl tracking-widest
 }
 
 .textLine {
-  @apply text-2xl md:text-5xl tracking-widest pl-4
+  @apply text-2xl lg:text-5xl tracking-widest pl-4
 }
 
 .items {
