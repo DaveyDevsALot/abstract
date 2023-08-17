@@ -31,7 +31,7 @@ export const Header = () => (
       </div>
       <div className={classes.menuItem}>
         <div className={classes.itemText}>
-          <Link href={'/'}>
+          <Link href={'/experience'}>
             <RollingText
               displayText={'EXPERIENCE'}
               fontSize={'0.9rem'}
