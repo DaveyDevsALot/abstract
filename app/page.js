@@ -1,10 +1,10 @@
 import { MainWrapper } from './components/ui/mainWrapper/MainWrapper'
-import { Main } from './views/main/Main'
+import { MainView } from './views/mainView/MainView'
 
 export default function Home() {
   return (
     <MainWrapper>
-      <Main />
+      <MainView />
     </MainWrapper>
   )
 }

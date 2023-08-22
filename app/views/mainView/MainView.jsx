@@ -1,56 +1,47 @@
 'use client'
-import { useLayoutEffect, useState } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import Image from 'next/image'
 import { gsap } from 'gsap'
 import { RollingText } from '../../components/ui/textDisplays/rollingText/RollingText'
-import classes from './Main.module.css'
-import photo1 from '/public/main/darker_b_&_w.png'
-import photo2 from '/public/main/David_Site_Impressionist.png'
+import classes from './MainView.module.css'
+import photo1 from '../../../public/main/darker_b_&_w.png'
+import photo2 from '../../../public/main/David_Site_Impressionist.png'
 
-export const Main = () => {
-  const [el, setEl] = useState(null)
-  const [el2, setEl2] = useState(null)
+export const MainView = () => {
+  const el = useRef(null)
+  const el2= useRef(null)
 
   useLayoutEffect(() => {
-    if (!el || !el2) return
-    gsap.from(el, {
+    if (!el.current || !el2.current) return
+    gsap.from(el.current, {
       opacity: 0,
-      duration: 12,
+      duration: 6,
       ease: 'ease-in-out',
     })
-    gsap.to(el2, {
+    gsap.to(el2.current, {
       opacity: 0,
-      duration: 12,
+      duration: 6,
       ease: 'ease-in-out',
     })
-  }, [el, el2])
+  }, [])
 
   return (
     <div className={classes.homeMain}>
-      <div className={classes.homeItem}>
-        <div className={classes.images}>
-          <div className={classes.mainImage}>
+      <div className={classes.images}>
+          <div className={classes.mainImage} id="fadeIn" ref={el}>
             <Image
-              height={400}
-              src={photo1}
-              alt="Black and White Image of David R Coulombe"
-            />
-          </div>
-          <div className={classes.mainImage2} id="fadeIn" ref={setEl}>
-            <Image
-              height={400}
+              className={classes.image}
               src={photo2}
               alt="Black and White Image of David R Coulombe"
             />
           </div>
-          <div className={classes.mainImage2} id="fadeOut" ref={setEl2}>
+          <div className={classes.mainImage} id="fadeOut" ref={el2}>
             <Image
-              height={400}
+              className={classes.image}
               src={photo1}
               alt="Black and White Image of David R Coulombe"
             />
           </div>
-        </div>
       </div>
       <div className={classes.mainText}>
         <div className={classes.menuItem}>

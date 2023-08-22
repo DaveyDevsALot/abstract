@@ -3,7 +3,7 @@
 }
 
 .expItem {
-  @apply relative w-72 sm:w-96 xl:w-[36rem] rounded-lg transition-all;
+  @apply relative w-72 sm:w-96 xl:w-[36rem] rounded-lg transition-all aspect-[16/9];
 }
 
 .image {

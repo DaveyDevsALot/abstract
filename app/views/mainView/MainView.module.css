@@ -1,5 +1,5 @@
 .homeMain {
-  @apply flex flex-col justify-end;
+  @apply flex flex-col justify-end flex-grow;
 }
 
 .homeItem {
@@ -10,16 +10,16 @@
   @apply w-full h-full text-white;
 }
 
+.image {
+  @apply h-[40vh] sm:h-[45vh] w-fit
+}
+
 .images {
-  @apply  relative;
+  @apply  relative h-full w-full;
 }
 
 .mainImage {
-  @apply opacity-0;
-}
-
-.mainImage2 {
-  @apply absolute bottom-0;
+  @apply absolute bottom-0 left-0 right-0 w-fit m-auto;
 }
 
 .mainText {

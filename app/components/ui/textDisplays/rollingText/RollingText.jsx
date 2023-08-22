@@ -8,11 +8,12 @@ export const RollingText = ({
   fontSize,
   minFontSize = '0.5rem',
 }) => {
-  const ref = useRef()
+  const ref = useRef(null)
 
   useLayoutEffect(() => {
+    if (!ref.current) return
     const repeatCount = 15
-    const split = new SplitType('span', { type: 'chars' })
+    const split = new SplitType(ref.current, { type: 'chars' })
     const tl = gsap.timeline({ paused: true })
 
     split.chars.forEach((obj, i) => {
@@ -35,12 +36,11 @@ export const RollingText = ({
   return (
     <div
       className={classes.stage}
-      ref={ref}
       style={{
         fontSize: `clamp(${minFontSize}, -0.875rem + 5vw, ${fontSize})`,
       }}
     >
-      <span className={classes.cloneText}>{displayText}</span>
+      <span ref={ref} className={classes.cloneText}>{displayText}</span>
     </div>
   )
 }
