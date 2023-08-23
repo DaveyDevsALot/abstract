@@ -1,5 +1,5 @@
 'use client'
-import { useLayoutEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { gsap } from 'gsap'
 import { RollingText } from '../../components/ui/textDisplays/rollingText/RollingText'
@@ -11,7 +11,7 @@ export const MainView = () => {
   const el = useRef(null)
   const el2= useRef(null)
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (!el.current || !el2.current) return
     gsap.from(el.current, {
       opacity: 0,
