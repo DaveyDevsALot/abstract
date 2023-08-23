@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useLayoutEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import classes from './AboutView.module.css'
 import photo1 from '../../../public/about/uconn_cropped.png'
@@ -8,7 +8,7 @@ export default function AboutView() {
   const ref1 = useRef()
   const ref2 = useRef()
   const ref3 = useRef()
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (!ref1.current || !ref2.current || !ref3.current) return
     const tl = gsap.timeline({ paused: true })
     tl.from(ref1.current, {
