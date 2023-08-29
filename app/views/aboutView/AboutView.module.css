@@ -1,24 +1,16 @@
 .aboutMain {
-  @apply flex justify-center content-start flex-wrap px-8 uppercase;
+  @apply w-full px-2
 }
 .centeredText {
   @apply text-center
 }
 
-.item1, .item2,.textDisplayMain {
-  @apply w-auto m-auto top-16;
-}
-
-.item1 {
-  @apply pt-32
-}
-
-.item2 {
-  @apply absolute;
+.textDisplayMain {
+  @apply top-0 bottom-0 m-auto h-fit px-2 md:px-24;
 }
 
 .item1, .item2 {
-  @apply top-36
+  @apply absolute top-0 bottom-0 m-auto h-fit w-fit left-0 right-0 max-w-[90vw] md:max-w-[55vw];
 }
 
 .textDisplayItem {
@@ -26,19 +18,19 @@
 }
 
 .textDisplayMain {
-  @apply absolute top-[-1rem] sm:top-16 pt-10 text-gray-50;
+  @apply absolute text-gray-50;
 }
 
 .textLabel {
-  @apply text-3xl lg:text-6xl tracking-widest
+  @apply text-3xl md:text-4xl lg:text-6xl tracking-widest
 }
 
 .textLine {
-  @apply text-2xl lg:text-5xl tracking-widest pl-4
+  @apply text-2xl md:text-3xl lg:text-5xl tracking-widest pl-4
 }
 
 .items {
-  @apply relative
+  @apply relative h-full px-2
 }
 
 

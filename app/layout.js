@@ -1,11 +1,11 @@
 import './globals.css'
 import React from 'react'
 import dynamic from 'next/dynamic'
-import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 import { Footer } from '../app/components/ui/footer/Footer'
 import { Header } from '../app/components/ui/header/Header'
 import { HealthCheck } from '../app/components/ui/healthCheck/HealthCheck'
+import { MainWrapper } from '../app/components/ui/mainWrapper/MainWrapper'
 const ClockWithNoSSR = dynamic(
   () => import('../app/components/ui/dateTime/DateTime'),
   {
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         className={`flex flex-col ${FrankFont.variable} font-sans tracking-wide`}
       >
         <Header />
-        {children}
+        <MainWrapper>{children}</MainWrapper>
         <Footer />
         <ClockWithNoSSR />
         <HealthCheck />

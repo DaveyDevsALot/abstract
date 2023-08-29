@@ -1,47 +1,54 @@
 import Image from 'next/image'
-import { useEffect, useRef } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import classes from './AboutView.module.css'
 import photo1 from '../../../public/about/uconn_cropped.png'
 import photo2 from '../../../public/about/ed_x_new.png'
+import { useGsapContext } from '../../hooks/useGsapContext'
 export default function AboutView() {
+  const containerRef = useRef()
   const ref1 = useRef()
   const ref2 = useRef()
   const ref3 = useRef()
-  useEffect(() => {
+  const ctx = useGsapContext(containerRef);
+
+  useLayoutEffect(() => {
     if (!ref1.current || !ref2.current || !ref3.current) return
-    const tl = gsap.timeline({ paused: true })
-    tl.from(ref1.current, {
-      opacity: 0,
-      duration: 2.5,
-      ease: 'easeInOut',
+    ctx.add(() => {
+      const tl = gsap.timeline({ paused: true })
+      tl.from(ref1.current, {
+        opacity: 0,
+        duration: 2.5,
+        ease: 'easeInOut',
+      })
+      tl.to(ref1.current, {
+        opacity: 0,
+        duration: 2.5,
+        ease: 'easeInOut',
+      })
+      tl.from(ref2.current, {
+        opacity: 0,
+        duration: 2.5,
+        ease: 'easeInOut',
+      })
+      tl.to(ref2.current, {
+        opacity: 0,
+        duration: 2.5,
+        ease: 'easeInOut',
+      })
+      tl.from(ref3.current, {
+        opacity: 0,
+        duration: 2.5,
+        ease: ref3.current,
+      })
+      tl.play()
     })
-    tl.to(ref1.current, {
-      opacity: 0,
-      duration: 2.5,
-      ease: 'easeInOut',
-    })
-    tl.from(ref2.current, {
-      opacity: 0,
-      duration: 2.5,
-      ease: 'easeInOut',
-    })
-    tl.to(ref2.current, {
-      opacity: 0,
-      duration: 2.5,
-      ease: 'easeInOut',
-    })
-    tl.from(ref3.current, {
-      opacity: 0,
-      duration: 2.5,
-      ease: ref3.current,
-    })
-    tl.play()
-  }, [])
+    return () => ctx.revert();
+  }, []);
 
   return (
     <div className={classes.aboutMain}>
-      <div className={classes.items}>
+      <div className={classes.items} ref={containerRef}>
         <div className={classes.item1} ref={ref1}>
           <Image
             src={photo1}
